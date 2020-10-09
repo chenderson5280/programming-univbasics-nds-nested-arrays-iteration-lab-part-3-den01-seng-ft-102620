@@ -7,12 +7,12 @@ def join_nested_strings(src)
     inner_count = 0
     while inner_count < src[count].length do
       if src[count][inner_count].is_a? String
-        result << src[count][inner_count]
+        result << src[count][inner_count].join(" ")
       end
       inner_count+=1
     end
       count +=1
   end
-  %w(result)
+
 
 end
